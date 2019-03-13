@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
                 sec = sec % 60;
             }
 
-            string time = min.ToString() + "'" + sec.ToString() + "''" + milisec.ToString();
+            string time = min.ToString() + "'" + sec.ToString("D2") + "''" + milisec.ToString("D3");
             return time;
         }
 
