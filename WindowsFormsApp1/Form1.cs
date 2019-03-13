@@ -14,17 +14,14 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         static int offset;
+        static byte[] empty = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        static byte[] StringToHex(string str)
-        {
-            byte[] arrByte = Encoding.GetEncoding("shift_jis").GetBytes(str);
-            return arrByte;
-        }
+        
 
         static string HexToString(byte[] data)
         {
@@ -88,6 +85,32 @@ namespace WindowsFormsApp1
             return data;
         }
 
+        static DateTime HexToDate(byte[] data)
+        {
+            string UnixTime = BitConverter.ToInt32(data, 0).ToString();
+            DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1));
+            DateTime TranslateDate = startTime.AddSeconds(double.Parse(UnixTime));
+            return TranslateDate;
+        }
+
+        static byte[] DateToHex(DateTime date)
+        {
+            long UnixDate = (date.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
+            byte[] arrByte = new byte[0x4];
+            try
+            {
+                arrByte[0] = (byte)UnixDate;
+                arrByte[1] = (byte)(UnixDate >> 8);
+                arrByte[2] = (byte)(UnixDate >> 16);
+                arrByte[3] = (byte)(UnixDate >> 24);
+            }
+            catch
+            {
+                MessageBox.Show("Too long number", "Invaild number", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return arrByte;
+        }
+
         static void write(int offset, byte[] data)
         {
             using (BinaryWriter writer = new BinaryWriter(File.Open("Test.txt", FileMode.Open, FileAccess.ReadWrite)))
@@ -127,6 +150,8 @@ namespace WindowsFormsApp1
                 0xE7, 0xFA, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x9B, 0xEB, 0x01, 0x00
             };
             write(offset, data);
+            DateTime date = new DateTime(2019, 03, 12);
+            write(offset +0x30, DateToHex(date));
             //write(offset + 0x30, IntToHex(TimeToInt(txtTime.Text)));
             //StringToHex("ＳＥＧＡＡＡＡＡＡＡ");
             byte[] temp = read(offset);
@@ -141,6 +166,31 @@ namespace WindowsFormsApp1
             Array.Copy(temp, 0x16, area, 0, 0x1);
             Array.Copy(temp, 0x2C, tTime, 0, 0x4);
             lbTest.Text = "car_maker=" + car_maker[0] + " car=" + car[0] + " area=" + area[0] + " " + HexToInt(tTime) + " = " + IntToTime(HexToInt(tTime)) + " " + HexToString(name);
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            byte[] temp = read(offset);
+            byte[] name = new byte[0xC];
+            byte[] car_maker = new byte[0x1];
+            byte[] car = new byte[0x1];
+            byte[] area = new byte[0x1];
+            byte[] tTime = new byte[0x4];
+            byte[] date = new byte[0x4];
+            Array.Copy(temp, name, 0xC);
+            Array.Copy(temp, 0x14, car_maker, 0, 0x1);
+            Array.Copy(temp, 0x15, car, 0, 0x1);
+            Array.Copy(temp, 0x16, area, 0, 0x1);
+            Array.Copy(temp, 0x2C, tTime, 0, 0x4);
+            Array.Copy(temp, 0x1C, date, 0, 0x4);
+            int index = gvRank.Rows.Add();
+            gvRank.Rows[index].Cells[0].Value = index;
+            gvRank.Rows[index].Cells[1].Value = HexToString(name);
+            gvRank.Rows[index].Cells[2].Value = IntToTime(HexToInt(tTime));
+            gvRank.Rows[index].Cells[3].Value = car_maker[0] + " of " + car[0];
+            gvRank.Rows[index].Cells[4].Value = area[0];
+            gvRank.Rows[index].Cells[5].Value = HexToDate(date);
         }
     }
 }

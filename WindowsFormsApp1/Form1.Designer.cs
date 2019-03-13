@@ -28,11 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cb_ranktype = new System.Windows.Forms.ComboBox();
             this.btnWrite = new System.Windows.Forms.Button();
             this.cb_Online = new System.Windows.Forms.ComboBox();
             this.lbTest = new System.Windows.Forms.Label();
             this.txtTime = new System.Windows.Forms.TextBox();
+            this.gvRank = new System.Windows.Forms.DataGridView();
+            this.order = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.car = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.area = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.gvRank)).BeginInit();
             this.SuspendLayout();
             // 
             // cb_ranktype
@@ -70,7 +80,7 @@
             // lbTest
             // 
             this.lbTest.AutoSize = true;
-            this.lbTest.Location = new System.Drawing.Point(13, 93);
+            this.lbTest.Location = new System.Drawing.Point(11, 418);
             this.lbTest.Name = "lbTest";
             this.lbTest.Size = new System.Drawing.Size(35, 12);
             this.lbTest.TabIndex = 3;
@@ -84,11 +94,63 @@
             this.txtTime.TabIndex = 4;
             this.txtTime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTime_KeyPress);
             // 
+            // gvRank
+            // 
+            this.gvRank.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvRank.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.order,
+            this.name,
+            this.time,
+            this.car,
+            this.area,
+            this.date});
+            this.gvRank.Location = new System.Drawing.Point(12, 38);
+            this.gvRank.Name = "gvRank";
+            this.gvRank.RowTemplate.Height = 21;
+            this.gvRank.Size = new System.Drawing.Size(632, 295);
+            this.gvRank.TabIndex = 5;
+            // 
+            // order
+            // 
+            this.order.HeaderText = "order";
+            this.order.Name = "order";
+            this.order.Width = 50;
+            // 
+            // name
+            // 
+            dataGridViewCellStyle1.NullValue = "ＳＥＧＡ";
+            this.name.DefaultCellStyle = dataGridViewCellStyle1;
+            this.name.HeaderText = "name";
+            this.name.Name = "name";
+            // 
+            // time
+            // 
+            this.time.HeaderText = "time";
+            this.time.Name = "time";
+            // 
+            // car
+            // 
+            this.car.HeaderText = "car";
+            this.car.Name = "car";
+            // 
+            // area
+            // 
+            this.area.HeaderText = "area";
+            this.area.Name = "area";
+            // 
+            // date
+            // 
+            dataGridViewCellStyle2.Format = "d";
+            this.date.DefaultCellStyle = dataGridViewCellStyle2;
+            this.date.HeaderText = "date";
+            this.date.Name = "date";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 117);
+            this.ClientSize = new System.Drawing.Size(657, 439);
+            this.Controls.Add(this.gvRank);
             this.Controls.Add(this.txtTime);
             this.Controls.Add(this.lbTest);
             this.Controls.Add(this.cb_Online);
@@ -96,6 +158,8 @@
             this.Controls.Add(this.cb_ranktype);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gvRank)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,6 +172,13 @@
         private System.Windows.Forms.ComboBox cb_Online;
         private System.Windows.Forms.Label lbTest;
         private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.DataGridView gvRank;
+        private System.Windows.Forms.DataGridViewTextBoxColumn order;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn car;
+        private System.Windows.Forms.DataGridViewTextBoxColumn area;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date;
     }
 }
 
