@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cb_ranktype = new System.Windows.Forms.ComboBox();
             this.btnWrite = new System.Windows.Forms.Button();
             this.cb_Online = new System.Windows.Forms.ComboBox();
@@ -82,9 +85,8 @@
             this.lbTest.AutoSize = true;
             this.lbTest.Location = new System.Drawing.Point(11, 418);
             this.lbTest.Name = "lbTest";
-            this.lbTest.Size = new System.Drawing.Size(35, 12);
+            this.lbTest.Size = new System.Drawing.Size(0, 12);
             this.lbTest.TabIndex = 3;
-            this.lbTest.Text = "label1";
             // 
             // txtTime
             // 
@@ -107,7 +109,7 @@
             this.gvRank.Location = new System.Drawing.Point(12, 38);
             this.gvRank.Name = "gvRank";
             this.gvRank.RowTemplate.Height = 21;
-            this.gvRank.Size = new System.Drawing.Size(632, 295);
+            this.gvRank.Size = new System.Drawing.Size(633, 295);
             this.gvRank.TabIndex = 5;
             // 
             // order
@@ -118,32 +120,42 @@
             // 
             // name
             // 
-            dataGridViewCellStyle1.NullValue = "ＳＥＧＡ";
-            this.name.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.NullValue = "ＳＥＧＡ";
+            this.name.DefaultCellStyle = dataGridViewCellStyle6;
             this.name.HeaderText = "name";
             this.name.Name = "name";
             // 
             // time
             // 
+            dataGridViewCellStyle7.NullValue = "6\'00\'\'000";
+            this.time.DefaultCellStyle = dataGridViewCellStyle7;
             this.time.HeaderText = "time";
             this.time.Name = "time";
+            this.time.Width = 50;
             // 
             // car
             // 
+            dataGridViewCellStyle8.NullValue = "TRUENO GT-APEX (AE86)";
+            this.car.DefaultCellStyle = dataGridViewCellStyle8;
             this.car.HeaderText = "car";
             this.car.Name = "car";
+            this.car.Width = 220;
             // 
             // area
             // 
+            dataGridViewCellStyle9.NullValue = "群馬";
+            this.area.DefaultCellStyle = dataGridViewCellStyle9;
             this.area.HeaderText = "area";
             this.area.Name = "area";
             // 
             // date
             // 
-            dataGridViewCellStyle2.Format = "d";
-            this.date.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Format = "d";
+            dataGridViewCellStyle10.NullValue = "2014.01.01";
+            this.date.DefaultCellStyle = dataGridViewCellStyle10;
             this.date.HeaderText = "date";
             this.date.Name = "date";
+            this.date.Width = 70;
             // 
             // Form1
             // 

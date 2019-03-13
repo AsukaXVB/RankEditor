@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using static WindowsFormsApp1.CRC32;
 
 namespace WindowsFormsApp1
 {
@@ -21,7 +22,11 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        
+        static byte[] StringToHex(string str)
+        {
+            byte[] arrByte = Encoding.GetEncoding("shift_jis").GetBytes(str);
+            return arrByte;
+        }
 
         static string HexToString(byte[] data)
         {
@@ -84,6 +89,17 @@ namespace WindowsFormsApp1
             fs.Close();
             return data;
         }
+
+       /* static void sCRC32()
+        {
+            FileStream fs = File.Open("SBZZ_sram.bin", FileMode.Open, FileAccess.ReadWrite);
+            fs.Seek(0x40004, SeekOrigin.Begin);
+            BinaryReader reader = new BinaryReader(fs);
+            byte[] data = reader.ReadBytes(0x2DFFB);
+            byte[] hash = new byte[0x4];
+            uint crc32 = new CRC32().Calc(data);
+            fs.Close();
+        }*/
 
         static DateTime HexToDate(byte[] data)
         {
@@ -166,11 +182,12 @@ namespace WindowsFormsApp1
             Array.Copy(temp, 0x16, area, 0, 0x1);
             Array.Copy(temp, 0x2C, tTime, 0, 0x4);
             lbTest.Text = "car_maker=" + car_maker[0] + " car=" + car[0] + " area=" + area[0] + " " + HexToInt(tTime) + " = " + IntToTime(HexToInt(tTime)) + " " + HexToString(name);
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            cb_Online.SelectedIndex = 0;
+            cb_ranktype.SelectedIndex = 0;
             byte[] temp = read(offset);
             byte[] name = new byte[0xC];
             byte[] car_maker = new byte[0x1];
