@@ -82,6 +82,7 @@ namespace WindowsFormsApp1
 
         static byte[] read(int offset)
         {
+            //FileStream fs = File.Open("SBZZ_sram.bin", FileMode.Open, FileAccess.Read);
             FileStream fs = File.Open("Test.txt", FileMode.Open, FileAccess.Read);
             fs.Seek(offset, SeekOrigin.Begin);
             BinaryReader reader = new BinaryReader(fs);
@@ -90,14 +91,15 @@ namespace WindowsFormsApp1
             return data;
         }
 
-       /* static void sCRC32()
+        /*static void sCRC32()
         {
             FileStream fs = File.Open("SBZZ_sram.bin", FileMode.Open, FileAccess.ReadWrite);
             fs.Seek(0x40004, SeekOrigin.Begin);
             BinaryReader reader = new BinaryReader(fs);
             byte[] data = reader.ReadBytes(0x2DFFB);
             byte[] hash = new byte[0x4];
-            uint crc32 = new CRC32().Calc(data);
+            uint crc32 = GetCRC32(data);
+            write(offset, StringToHex(crc32.ToString()));
             fs.Close();
         }*/
 
@@ -129,6 +131,7 @@ namespace WindowsFormsApp1
 
         static void write(int offset, byte[] data)
         {
+            //using (BinaryWriter writer = new BinaryWriter(File.Open("SBZZ_sram.bin", FileMode.Open, FileAccess.ReadWrite)))
             using (BinaryWriter writer = new BinaryWriter(File.Open("Test.txt", FileMode.Open, FileAccess.ReadWrite)))
             {
                 writer.Seek(offset, SeekOrigin.Begin); 
@@ -141,6 +144,37 @@ namespace WindowsFormsApp1
             if(ranktype == 0x01)
             {
                 offset = 0x65809 + 0x00600 * course_id;
+            }
+        }
+
+        public void reloadDgv()
+        {
+            byte[] name = new byte[0xC];
+            byte[] car_maker = new byte[0x1];
+            byte[] car = new byte[0x1];
+            byte[] area = new byte[0x1];
+            byte[] tTime = new byte[0x4];
+            byte[] date = new byte[0x4];
+
+            for (int index = 0; index < 10; index++)
+            {
+                gvRank.Rows.Add();
+                byte[] temp = read(offset + 0x600 * index);
+
+                Array.Copy(temp, 0x00, name, 0, 0xC);
+                Array.Copy(temp, 0x14, car_maker, 0, 0x1);
+                Array.Copy(temp, 0x15, car, 0, 0x1);
+                Array.Copy(temp, 0x16, area, 0, 0x1);
+                Array.Copy(temp, 0x2C, tTime, 0, 0x4);
+                Array.Copy(temp, 0x1C, date, 0, 0x4);
+
+
+                gvRank.Rows[index].Cells[0].Value = index + 0x1;
+                gvRank.Rows[index].Cells[1].Value = HexToString(name);
+                gvRank.Rows[index].Cells[2].Value = IntToTime(HexToInt(tTime));
+                gvRank.Rows[index].Cells[3].Value = car_maker[0] + " of " + car[0];
+                gvRank.Rows[index].Cells[4].Value = area[0];
+                gvRank.Rows[index].Cells[5].Value = HexToDate(date);
             }
         }
 
@@ -157,8 +191,9 @@ namespace WindowsFormsApp1
 
         private void btnWrite_Click(object sender, EventArgs e)
         {
-            int ranktype = cb_ranktype.SelectedIndex;
-            locate(ranktype, 0);
+            //int ranktype = cb_ranktype.SelectedIndex;
+            //locate(ranktype, 0);
+            /*sCRC32();
             byte[] data = new byte[] 
             {
                 0x8F, 0x48, 0x8E, 0x52, 0x82, 0xCC, 0x90, 0xE1, 0x99, 0x5C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -169,45 +204,26 @@ namespace WindowsFormsApp1
             DateTime date = new DateTime(2019, 03, 12);
             write(offset +0x30, DateToHex(date));
             //write(offset + 0x30, IntToHex(TimeToInt(txtTime.Text)));
-            //StringToHex("ＳＥＧＡＡＡＡＡＡＡ");
-            byte[] temp = read(offset);
-            byte[] name = new byte[0xC];
-            byte[] car_maker = new byte[0x1];
-            byte[] car = new byte[0x1];
-            byte[] area = new byte[0x1];
-            byte[] tTime = new byte[0x4];
-            Array.Copy(temp, name, 0xC);
-            Array.Copy(temp, 0x14, car_maker, 0, 0x1);
-            Array.Copy(temp, 0x15, car, 0, 0x1);
-            Array.Copy(temp, 0x16, area, 0, 0x1);
-            Array.Copy(temp, 0x2C, tTime, 0, 0x4);
-            lbTest.Text = "car_maker=" + car_maker[0] + " car=" + car[0] + " area=" + area[0] + " " + HexToInt(tTime) + " = " + IntToTime(HexToInt(tTime)) + " " + HexToString(name);
+            //StringToHex("ＳＥＧＡＡＡＡＡＡＡ");*/
+
+
+            offset = 0x65929;
+
+            for (int index = 0; index < 10; index++)
+            {
+                write(offset + 0x00 + 0x600 * index, StringToHex(gvRank.Rows[index].Cells[1].Value.ToString()));
+                write(offset + 0x2C + 0x600 * index, IntToHex(TimeToInt(gvRank.Rows[index].Cells[2].Value.ToString().Replace("'", ""))));
+                write(offset + 0x16 + 0x600 * index, IntToHex(Int32.Parse(gvRank.Rows[index].Cells[4].Value.ToString())));
+                write(offset + 0x1C + 0x600 * index, DateToHex(DateTime.Parse(gvRank.Rows[index].Cells[5].Value.ToString())));
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            offset = 0x65929;
             cb_Online.SelectedIndex = 0;
-            cb_ranktype.SelectedIndex = 0;
-            byte[] temp = read(offset);
-            byte[] name = new byte[0xC];
-            byte[] car_maker = new byte[0x1];
-            byte[] car = new byte[0x1];
-            byte[] area = new byte[0x1];
-            byte[] tTime = new byte[0x4];
-            byte[] date = new byte[0x4];
-            Array.Copy(temp, name, 0xC);
-            Array.Copy(temp, 0x14, car_maker, 0, 0x1);
-            Array.Copy(temp, 0x15, car, 0, 0x1);
-            Array.Copy(temp, 0x16, area, 0, 0x1);
-            Array.Copy(temp, 0x2C, tTime, 0, 0x4);
-            Array.Copy(temp, 0x1C, date, 0, 0x4);
-            int index = gvRank.Rows.Add();
-            gvRank.Rows[index].Cells[0].Value = index;
-            gvRank.Rows[index].Cells[1].Value = HexToString(name);
-            gvRank.Rows[index].Cells[2].Value = IntToTime(HexToInt(tTime));
-            gvRank.Rows[index].Cells[3].Value = car_maker[0] + " of " + car[0];
-            gvRank.Rows[index].Cells[4].Value = area[0];
-            gvRank.Rows[index].Cells[5].Value = HexToDate(date);
+            cb_ranktype.SelectedIndex = 1;
+            reloadDgv();
         }
     }
 }

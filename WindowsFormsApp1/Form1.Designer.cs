@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cb_ranktype = new System.Windows.Forms.ComboBox();
             this.btnWrite = new System.Windows.Forms.Button();
             this.cb_Online = new System.Windows.Forms.ComboBox();
@@ -54,16 +54,16 @@
             this.cb_ranktype.Items.AddRange(new object[] {
             "Car Ranks",
             "Course Ranks"});
-            this.cb_ranktype.Location = new System.Drawing.Point(140, 11);
+            this.cb_ranktype.Location = new System.Drawing.Point(140, 12);
             this.cb_ranktype.Name = "cb_ranktype";
-            this.cb_ranktype.Size = new System.Drawing.Size(121, 20);
+            this.cb_ranktype.Size = new System.Drawing.Size(121, 21);
             this.cb_ranktype.TabIndex = 0;
             // 
             // btnWrite
             // 
-            this.btnWrite.Location = new System.Drawing.Point(373, 9);
+            this.btnWrite.Location = new System.Drawing.Point(373, 10);
             this.btnWrite.Name = "btnWrite";
-            this.btnWrite.Size = new System.Drawing.Size(75, 23);
+            this.btnWrite.Size = new System.Drawing.Size(75, 25);
             this.btnWrite.TabIndex = 1;
             this.btnWrite.Text = "write";
             this.btnWrite.UseVisualStyleBackColor = true;
@@ -75,29 +75,30 @@
             this.cb_Online.Items.AddRange(new object[] {
             "Online",
             "In-Store"});
-            this.cb_Online.Location = new System.Drawing.Point(13, 11);
+            this.cb_Online.Location = new System.Drawing.Point(13, 12);
             this.cb_Online.Name = "cb_Online";
-            this.cb_Online.Size = new System.Drawing.Size(121, 20);
+            this.cb_Online.Size = new System.Drawing.Size(121, 21);
             this.cb_Online.TabIndex = 2;
             // 
             // lbTest
             // 
             this.lbTest.AutoSize = true;
-            this.lbTest.Location = new System.Drawing.Point(11, 418);
+            this.lbTest.Location = new System.Drawing.Point(11, 453);
             this.lbTest.Name = "lbTest";
-            this.lbTest.Size = new System.Drawing.Size(0, 12);
+            this.lbTest.Size = new System.Drawing.Size(0, 13);
             this.lbTest.TabIndex = 3;
             // 
             // txtTime
             // 
-            this.txtTime.Location = new System.Drawing.Point(267, 11);
+            this.txtTime.Location = new System.Drawing.Point(267, 12);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(100, 19);
+            this.txtTime.Size = new System.Drawing.Size(100, 20);
             this.txtTime.TabIndex = 4;
             this.txtTime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTime_KeyPress);
             // 
             // gvRank
             // 
+            this.gvRank.AllowUserToAddRows = false;
             this.gvRank.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRank.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.order,
@@ -106,10 +107,10 @@
             this.car,
             this.area,
             this.date});
-            this.gvRank.Location = new System.Drawing.Point(12, 38);
+            this.gvRank.Location = new System.Drawing.Point(12, 41);
             this.gvRank.Name = "gvRank";
             this.gvRank.RowTemplate.Height = 21;
-            this.gvRank.Size = new System.Drawing.Size(633, 295);
+            this.gvRank.Size = new System.Drawing.Size(633, 320);
             this.gvRank.TabIndex = 5;
             // 
             // order
@@ -120,48 +121,48 @@
             // 
             // name
             // 
-            dataGridViewCellStyle6.NullValue = "ＳＥＧＡ";
-            this.name.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.NullValue = "ＳＥＧＡ";
+            this.name.DefaultCellStyle = dataGridViewCellStyle1;
             this.name.HeaderText = "name";
             this.name.Name = "name";
             // 
             // time
             // 
-            dataGridViewCellStyle7.NullValue = "6\'00\'\'000";
-            this.time.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.NullValue = "6\'00\'\'000";
+            this.time.DefaultCellStyle = dataGridViewCellStyle2;
             this.time.HeaderText = "time";
             this.time.Name = "time";
             this.time.Width = 50;
             // 
             // car
             // 
-            dataGridViewCellStyle8.NullValue = "TRUENO GT-APEX (AE86)";
-            this.car.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.NullValue = "TRUENO GT-APEX (AE86)";
+            this.car.DefaultCellStyle = dataGridViewCellStyle3;
             this.car.HeaderText = "car";
             this.car.Name = "car";
             this.car.Width = 220;
             // 
             // area
             // 
-            dataGridViewCellStyle9.NullValue = "群馬";
-            this.area.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.NullValue = "群馬";
+            this.area.DefaultCellStyle = dataGridViewCellStyle4;
             this.area.HeaderText = "area";
             this.area.Name = "area";
             // 
             // date
             // 
-            dataGridViewCellStyle10.Format = "d";
-            dataGridViewCellStyle10.NullValue = "2014.01.01";
-            this.date.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.Format = "d";
+            dataGridViewCellStyle5.NullValue = "2014.01.01";
+            this.date.DefaultCellStyle = dataGridViewCellStyle5;
             this.date.HeaderText = "date";
             this.date.Name = "date";
             this.date.Width = 70;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 439);
+            this.ClientSize = new System.Drawing.Size(657, 476);
             this.Controls.Add(this.gvRank);
             this.Controls.Add(this.txtTime);
             this.Controls.Add(this.lbTest);
