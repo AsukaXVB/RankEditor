@@ -28,30 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cb_ranktype = new System.Windows.Forms.ComboBox();
             this.btnWrite = new System.Windows.Forms.Button();
             this.cb_Online = new System.Windows.Forms.ComboBox();
             this.lbTest = new System.Windows.Forms.Label();
             this.gvRank = new System.Windows.Forms.DataGridView();
+            this.cb_Course = new System.Windows.Forms.ComboBox();
+            this.cb_Direction = new System.Windows.Forms.ComboBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.cb_maker = new System.Windows.Forms.ComboBox();
+            this.cb_car = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cbArea = new System.Windows.Forms.ComboBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.car = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.area = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cb_Course = new System.Windows.Forms.ComboBox();
-            this.cb_Direction = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.cb_maker = new System.Windows.Forms.ComboBox();
-            this.cb_car = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.car_maker = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.car_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.areaID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvRank)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,18 +65,18 @@
             this.cb_ranktype.Items.AddRange(new object[] {
             "Car Ranks",
             "Course Ranks"});
-            this.cb_ranktype.Location = new System.Drawing.Point(13, 12);
+            this.cb_ranktype.Location = new System.Drawing.Point(13, 13);
             this.cb_ranktype.Name = "cb_ranktype";
-            this.cb_ranktype.Size = new System.Drawing.Size(121, 20);
+            this.cb_ranktype.Size = new System.Drawing.Size(121, 21);
             this.cb_ranktype.TabIndex = 0;
             // 
             // btnWrite
             // 
-            this.btnWrite.Location = new System.Drawing.Point(571, 365);
+            this.btnWrite.Location = new System.Drawing.Point(570, 365);
             this.btnWrite.Name = "btnWrite";
-            this.btnWrite.Size = new System.Drawing.Size(75, 23);
+            this.btnWrite.Size = new System.Drawing.Size(75, 25);
             this.btnWrite.TabIndex = 1;
-            this.btnWrite.Text = "write";
+            this.btnWrite.Text = "Write";
             this.btnWrite.UseVisualStyleBackColor = true;
             this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
             // 
@@ -82,18 +86,18 @@
             this.cb_Online.Items.AddRange(new object[] {
             "In-Store",
             "Online"});
-            this.cb_Online.Location = new System.Drawing.Point(13, 38);
+            this.cb_Online.Location = new System.Drawing.Point(13, 41);
             this.cb_Online.Name = "cb_Online";
-            this.cb_Online.Size = new System.Drawing.Size(121, 20);
+            this.cb_Online.Size = new System.Drawing.Size(121, 21);
             this.cb_Online.TabIndex = 2;
             this.cb_Online.SelectedIndexChanged += new System.EventHandler(this.cb_Online_SelectedIndexChanged);
             // 
             // lbTest
             // 
             this.lbTest.AutoSize = true;
-            this.lbTest.Location = new System.Drawing.Point(11, 418);
+            this.lbTest.Location = new System.Drawing.Point(10, 367);
             this.lbTest.Name = "lbTest";
-            this.lbTest.Size = new System.Drawing.Size(0, 12);
+            this.lbTest.Size = new System.Drawing.Size(0, 13);
             this.lbTest.TabIndex = 3;
             // 
             // gvRank
@@ -106,57 +110,15 @@
             this.time,
             this.car,
             this.area,
-            this.date});
-            this.gvRank.Location = new System.Drawing.Point(13, 64);
+            this.date,
+            this.car_maker,
+            this.car_id,
+            this.areaID});
+            this.gvRank.Location = new System.Drawing.Point(13, 69);
             this.gvRank.Name = "gvRank";
             this.gvRank.RowTemplate.Height = 21;
-            this.gvRank.Size = new System.Drawing.Size(633, 295);
+            this.gvRank.Size = new System.Drawing.Size(633, 234);
             this.gvRank.TabIndex = 5;
-            // 
-            // order
-            // 
-            this.order.HeaderText = "order";
-            this.order.Name = "order";
-            this.order.Width = 50;
-            // 
-            // name
-            // 
-            dataGridViewCellStyle21.NullValue = "ＳＥＧＡ";
-            this.name.DefaultCellStyle = dataGridViewCellStyle21;
-            this.name.HeaderText = "name";
-            this.name.Name = "name";
-            // 
-            // time
-            // 
-            dataGridViewCellStyle22.NullValue = "6\'00\'\'000";
-            this.time.DefaultCellStyle = dataGridViewCellStyle22;
-            this.time.HeaderText = "time";
-            this.time.Name = "time";
-            this.time.Width = 50;
-            // 
-            // car
-            // 
-            dataGridViewCellStyle23.NullValue = "TRUENO GT-APEX (AE86)";
-            this.car.DefaultCellStyle = dataGridViewCellStyle23;
-            this.car.HeaderText = "car";
-            this.car.Name = "car";
-            this.car.Width = 220;
-            // 
-            // area
-            // 
-            dataGridViewCellStyle24.NullValue = "群馬";
-            this.area.DefaultCellStyle = dataGridViewCellStyle24;
-            this.area.HeaderText = "area";
-            this.area.Name = "area";
-            // 
-            // date
-            // 
-            dataGridViewCellStyle25.Format = "d";
-            dataGridViewCellStyle25.NullValue = "2014.01.01";
-            this.date.DefaultCellStyle = dataGridViewCellStyle25;
-            this.date.HeaderText = "date";
-            this.date.Name = "date";
-            this.date.Width = 70;
             // 
             // cb_Course
             // 
@@ -178,9 +140,9 @@
             "Hakone",
             "Momiji",
             "Nanamagari"});
-            this.cb_Course.Location = new System.Drawing.Point(140, 38);
+            this.cb_Course.Location = new System.Drawing.Point(140, 41);
             this.cb_Course.Name = "cb_Course";
-            this.cb_Course.Size = new System.Drawing.Size(121, 20);
+            this.cb_Course.Size = new System.Drawing.Size(121, 21);
             this.cb_Course.TabIndex = 6;
             this.cb_Course.SelectedIndexChanged += new System.EventHandler(this.cb_Course_SelectedIndexChanged);
             // 
@@ -190,26 +152,27 @@
             this.cb_Direction.Items.AddRange(new object[] {
             "Direction 1",
             "Direciont 2"});
-            this.cb_Direction.Location = new System.Drawing.Point(267, 38);
+            this.cb_Direction.Location = new System.Drawing.Point(267, 41);
             this.cb_Direction.Name = "cb_Direction";
-            this.cb_Direction.Size = new System.Drawing.Size(100, 20);
+            this.cb_Direction.Size = new System.Drawing.Size(100, 21);
             this.cb_Direction.TabIndex = 7;
             this.cb_Direction.SelectedIndexChanged += new System.EventHandler(this.cb_Direction_SelectedIndexChanged);
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 365);
-            this.textBox1.MaxLength = 6;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 19);
-            this.textBox1.TabIndex = 8;
+            this.txtName.Location = new System.Drawing.Point(11, 309);
+            this.txtName.MaxLength = 6;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 8;
             // 
-            // textBox2
+            // txtTime
             // 
-            this.textBox2.Location = new System.Drawing.Point(118, 365);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 19);
-            this.textBox2.TabIndex = 9;
+            this.txtTime.Location = new System.Drawing.Point(117, 309);
+            this.txtTime.MaxLength = 9;
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(100, 20);
+            this.txtTime.TabIndex = 9;
             // 
             // cb_maker
             // 
@@ -224,31 +187,31 @@
             "SUZUKI",
             "INITIALD",
             "COMPLETE"});
-            this.cb_maker.Location = new System.Drawing.Point(224, 365);
+            this.cb_maker.Location = new System.Drawing.Point(223, 309);
             this.cb_maker.Name = "cb_maker";
-            this.cb_maker.Size = new System.Drawing.Size(121, 20);
+            this.cb_maker.Size = new System.Drawing.Size(121, 21);
             this.cb_maker.TabIndex = 10;
             this.cb_maker.SelectedIndexChanged += new System.EventHandler(this.cb_maker_SelectedIndexChanged);
             // 
             // cb_car
             // 
             this.cb_car.FormattingEnabled = true;
-            this.cb_car.Location = new System.Drawing.Point(351, 365);
+            this.cb_car.Location = new System.Drawing.Point(350, 309);
             this.cb_car.Name = "cb_car";
-            this.cb_car.Size = new System.Drawing.Size(211, 20);
+            this.cb_car.Size = new System.Drawing.Size(211, 21);
             this.cb_car.TabIndex = 11;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(224, 391);
+            this.dateTimePicker1.Location = new System.Drawing.Point(223, 338);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 19);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 12;
             // 
-            // comboBox3
+            // cbArea
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbArea.FormattingEnabled = true;
+            this.cbArea.Items.AddRange(new object[] {
             "北海道",
             "青森県",
             "岩手県",
@@ -307,22 +270,105 @@
             "Thailand",
             "America",
             "* * *"});
-            this.comboBox3.Location = new System.Drawing.Point(12, 392);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 20);
-            this.comboBox3.TabIndex = 13;
+            this.cbArea.Location = new System.Drawing.Point(11, 339);
+            this.cbArea.Name = "cbArea";
+            this.cbArea.Size = new System.Drawing.Size(121, 21);
+            this.cbArea.TabIndex = 13;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(570, 309);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 14;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // order
+            // 
+            this.order.HeaderText = "order";
+            this.order.Name = "order";
+            this.order.ReadOnly = true;
+            this.order.Width = 50;
+            // 
+            // name
+            // 
+            dataGridViewCellStyle11.NullValue = "ＳＥＧＡ";
+            this.name.DefaultCellStyle = dataGridViewCellStyle11;
+            this.name.HeaderText = "name";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // time
+            // 
+            dataGridViewCellStyle12.NullValue = "6\'00\'\'000";
+            this.time.DefaultCellStyle = dataGridViewCellStyle12;
+            this.time.HeaderText = "time";
+            this.time.Name = "time";
+            this.time.ReadOnly = true;
+            this.time.Width = 50;
+            // 
+            // car
+            // 
+            dataGridViewCellStyle13.NullValue = "TRUENO GT-APEX (AE86)";
+            this.car.DefaultCellStyle = dataGridViewCellStyle13;
+            this.car.HeaderText = "car";
+            this.car.Name = "car";
+            this.car.ReadOnly = true;
+            this.car.Width = 220;
+            // 
+            // area
+            // 
+            dataGridViewCellStyle14.NullValue = "群馬";
+            this.area.DefaultCellStyle = dataGridViewCellStyle14;
+            this.area.HeaderText = "area";
+            this.area.Name = "area";
+            this.area.ReadOnly = true;
+            // 
+            // date
+            // 
+            dataGridViewCellStyle15.Format = "d";
+            dataGridViewCellStyle15.NullValue = "2014.01.01";
+            this.date.DefaultCellStyle = dataGridViewCellStyle15;
+            this.date.HeaderText = "date";
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            this.date.Width = 70;
+            // 
+            // car_maker
+            // 
+            this.car_maker.HeaderText = "car_maker";
+            this.car_maker.Name = "car_maker";
+            this.car_maker.ReadOnly = true;
+            this.car_maker.Visible = false;
+            // 
+            // car_id
+            // 
+            this.car_id.HeaderText = "car_id";
+            this.car_id.Name = "car_id";
+            this.car_id.ReadOnly = true;
+            this.car_id.Visible = false;
+            // 
+            // areaID
+            // 
+            this.areaID.HeaderText = "areaID";
+            this.areaID.Name = "areaID";
+            this.areaID.ReadOnly = true;
+            this.areaID.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 439);
-            this.Controls.Add(this.comboBox3);
+            this.ClientSize = new System.Drawing.Size(657, 400);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.cbArea);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cb_car);
             this.Controls.Add(this.cb_maker);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTime);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.cb_Direction);
             this.Controls.Add(this.cb_Course);
             this.Controls.Add(this.gvRank);
@@ -346,20 +392,24 @@
         private System.Windows.Forms.ComboBox cb_Online;
         private System.Windows.Forms.Label lbTest;
         private System.Windows.Forms.DataGridView gvRank;
+        private System.Windows.Forms.ComboBox cb_Course;
+        private System.Windows.Forms.ComboBox cb_Direction;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.ComboBox cb_maker;
+        private System.Windows.Forms.ComboBox cb_car;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cbArea;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridViewTextBoxColumn order;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn time;
         private System.Windows.Forms.DataGridViewTextBoxColumn car;
         private System.Windows.Forms.DataGridViewTextBoxColumn area;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
-        private System.Windows.Forms.ComboBox cb_Course;
-        private System.Windows.Forms.ComboBox cb_Direction;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox cb_maker;
-        private System.Windows.Forms.ComboBox cb_car;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn car_maker;
+        private System.Windows.Forms.DataGridViewTextBoxColumn car_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn areaID;
     }
 }
 
