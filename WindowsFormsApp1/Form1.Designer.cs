@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cb_ranktype = new System.Windows.Forms.ComboBox();
             this.btnWrite = new System.Windows.Forms.Button();
             this.cb_Online = new System.Windows.Forms.ComboBox();
@@ -294,16 +294,16 @@
             // 
             // name
             // 
-            dataGridViewCellStyle11.NullValue = "ＳＥＧＡ";
-            this.name.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle16.NullValue = "ＳＥＧＡ";
+            this.name.DefaultCellStyle = dataGridViewCellStyle16;
             this.name.HeaderText = "name";
             this.name.Name = "name";
             this.name.ReadOnly = true;
             // 
             // time
             // 
-            dataGridViewCellStyle12.NullValue = "6\'00\'\'000";
-            this.time.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle17.NullValue = "6\'00\'\'000";
+            this.time.DefaultCellStyle = dataGridViewCellStyle17;
             this.time.HeaderText = "time";
             this.time.Name = "time";
             this.time.ReadOnly = true;
@@ -311,8 +311,8 @@
             // 
             // car
             // 
-            dataGridViewCellStyle13.NullValue = "TRUENO GT-APEX (AE86)";
-            this.car.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle18.NullValue = "TRUENO GT-APEX (AE86)";
+            this.car.DefaultCellStyle = dataGridViewCellStyle18;
             this.car.HeaderText = "car";
             this.car.Name = "car";
             this.car.ReadOnly = true;
@@ -320,17 +320,17 @@
             // 
             // area
             // 
-            dataGridViewCellStyle14.NullValue = "群馬";
-            this.area.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle19.NullValue = "群馬";
+            this.area.DefaultCellStyle = dataGridViewCellStyle19;
             this.area.HeaderText = "area";
             this.area.Name = "area";
             this.area.ReadOnly = true;
             // 
             // date
             // 
-            dataGridViewCellStyle15.Format = "d";
-            dataGridViewCellStyle15.NullValue = "2014.01.01";
-            this.date.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle20.Format = "d";
+            dataGridViewCellStyle20.NullValue = "2014.01.01";
+            this.date.DefaultCellStyle = dataGridViewCellStyle20;
             this.date.HeaderText = "date";
             this.date.Name = "date";
             this.date.ReadOnly = true;
@@ -377,7 +377,7 @@
             this.Controls.Add(this.btnWrite);
             this.Controls.Add(this.cb_ranktype);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Rank Editor for Initial D Arcade Stage 8";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvRank)).EndInit();
             this.ResumeLayout(false);
