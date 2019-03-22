@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
             string String = Encoding.GetEncoding("shift_jis").GetString(data);
             return String;
         }
-        
+
         static byte[] IntToHex(int i)
         {
             byte[] arrByte = new byte[0x4];
@@ -134,8 +134,8 @@ namespace WindowsFormsApp1
             using (BinaryWriter writer = new BinaryWriter(File.Open("SBZZ_sram.bin", FileMode.Open, FileAccess.ReadWrite)))
             //using (BinaryWriter writer = new BinaryWriter(File.Open("Test.txt", FileMode.Open, FileAccess.ReadWrite)))
             {
-                writer.Seek(offset, SeekOrigin.Begin); 
-                writer.Write(data);     
+                writer.Seek(offset, SeekOrigin.Begin);
+                writer.Write(data);
             }
         }
 
@@ -185,9 +185,9 @@ namespace WindowsFormsApp1
 
         private void txtTime_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!char.IsDigit(e.KeyChar))
+            if (!char.IsDigit(e.KeyChar))
             {
-                if(e.KeyChar != (char)Keys.Back)
+                if (e.KeyChar != (char)Keys.Back)
                 {
                     e.Handled = true;
                 }
@@ -242,7 +242,33 @@ namespace WindowsFormsApp1
         public void cbCarManage()
         {
             int maker = cb_maker.SelectedIndex;
-            switch(maker)
+            string[,] cars = new string[,] {
+                {
+                    "TRUENO GT-APEX (AE86)",
+                    "LEVIN GT-APEX (AE86)",
+                    "LEVIN SR (AE85)",
+                    "MR2 G-Limited (SW20)",
+                    "ALTEZZA RS200 (SXE10)",
+                    "MR-S (ZZW30)",
+                    "SUPRA RZ (JZA80)",
+                    "86 GT (ZN6)",
+                    "PRIUS (ZVW30)",
+                    "TRUENO 2door GT-APEX (AE86)",
+                    "CELICA GT-FOUR (ST205)"
+                } ,
+                {
+                    "SKYLINE GT-R (BNR32)",
+                    "SKYLINE GT-R (BNR34)",
+                    "SILVIA K's (S13)",
+                    "Silvia Q's (S14)",
+                    "Silvia spec-R (S15)",
+                    "180SX TYPE Ⅱ (RPS13)",
+                    "FAIRLADY Z (Z33)",
+                    "GT-R NISMO (R35)",
+                    "SKYLINE 25GT TURBO (ER34)","","",
+                }
+            };
+            switch (maker)
             {
                 case (0):
                     cb_car.Items.Clear();
@@ -257,7 +283,7 @@ namespace WindowsFormsApp1
                         "86 GT (ZN6)",
                         "PRIUS (ZVW30)",
                         "TRUENO 2door GT-APEX (AE86)",
-                        "CELICA GT-FOUR (ST205)",
+                        "CELICA GT-FOUR (ST205)"
                     });
                     break;
                 case (1):
@@ -268,7 +294,7 @@ namespace WindowsFormsApp1
                         "SILVIA K's (S13)",
                         "Silvia Q's (S14)",
                         "Silvia spec-R (S15)",
-                        "180SX TYPE ࡱ (RPS13)",
+                        "180SX TYPE Ⅱ (RPS13)",
                         "FAIRLADY Z (Z33)",
                         "GT-R NISMO (R35)",
                         "SKYLINE 25GT TURBO (ER34)"
