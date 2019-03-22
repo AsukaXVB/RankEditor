@@ -546,11 +546,13 @@ namespace WindowsFormsApp1
             {
                 if (isLeftLarger(TimeToInt(txtTime.Text.ToString().Replace("'", "")), TimeToInt(gvRank.Rows[index].Cells[2].Value.ToString().Replace("'", ""))))
                 {
+                    if (TimeToInt(gvRank.Rows[index].Cells[2].Value.ToString().Replace("'", "")) == 3600000)
+                        newOrder = 0;
                     newOrder = index + 1;
                     //lbTest.Text = "true, is larger than " + index;
-                    if(newOrder <= 9)
-                        ifUpdate = true;
                 }
+                if (newOrder <= 9)
+                    ifUpdate = true;
             }
             if (ifUpdate)
             {
@@ -558,7 +560,8 @@ namespace WindowsFormsApp1
                 {
                     for (int i = 1; i <= 8; i++)
                     {
-                        gvRank.Rows[index].Cells[i].Value = gvRank.Rows[index - 1].Cells[i].Value;
+                        if(index != 0)
+                            gvRank.Rows[index].Cells[i].Value = gvRank.Rows[index - 1].Cells[i].Value;
                     }
                 }
                 gvRank.Rows[newOrder].Cells[1].Value = ToSBC(txtName.Text);
