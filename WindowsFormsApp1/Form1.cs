@@ -404,7 +404,7 @@ namespace WindowsFormsApp1
         {
             cb_Course.SelectedIndex = 0;
             cb_Direction.SelectedIndex = 0;
-            cb_ranktype.SelectedIndex = 0;
+            cb_ranktype.SelectedIndex = 1;
             cb_Online.SelectedIndex = 0;
             locate();
             reloadDgv();
