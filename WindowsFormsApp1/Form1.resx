@@ -117,7 +117,717 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="order.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="cb_Course.Items14" xml:space="preserve">
+    <value>Momiji</value>
+  </data>
+  <data name="cb_Course.Items15" xml:space="preserve">
+    <value>Nanamagari</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtTime.MaxLength" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="cb_Course.Items10" xml:space="preserve">
+    <value>Sadamine</value>
+  </data>
+  <data name="lbTest.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cb_Course.Items12" xml:space="preserve">
+    <value>Akina Snow</value>
+  </data>
+  <data name="cb_Course.Items13" xml:space="preserve">
+    <value>Hakone</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="cb_Course.Items6" xml:space="preserve">
+    <value>Happogahara</value>
+  </data>
+  <data name="btnUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cb_Course.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cb_ranktype.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbArea.Items32" xml:space="preserve">
+    <value>島根県</value>
+  </data>
+  <data name="cbArea.Items16" xml:space="preserve">
+    <value>長野県</value>
+  </data>
+  <data name="cbArea.Items36" xml:space="preserve">
+    <value>香川県</value>
+  </data>
+  <data name="cbArea.Items26" xml:space="preserve">
+    <value>奈良県</value>
+  </data>
+  <data name="cbArea.Items56" xml:space="preserve">
+    <value>America</value>
+  </data>
+  <data name="cbArea.Items46" xml:space="preserve">
+    <value>沖縄県</value>
+  </data>
+  <data name="&gt;&gt;gvRank.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="car.Width" type="System.Int32, mscorlib">
+    <value>220</value>
+  </data>
+  <data name="cbArea.Items40" xml:space="preserve">
+    <value>佐賀県</value>
+  </data>
+  <data name="&gt;&gt;gvRank.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txtName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cb_car.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cb_Course.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtTime.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbArea.Items17" xml:space="preserve">
+    <value>富山県</value>
+  </data>
+  <data name="&gt;&gt;gvRank.Name" xml:space="preserve">
+    <value>gvRank</value>
+  </data>
+  <data name="cbArea.Items37" xml:space="preserve">
+    <value>愛媛県</value>
+  </data>
+  <data name="cbArea.Items27" xml:space="preserve">
+    <value>滋賀県</value>
+  </data>
+  <data name="cbArea.Items57" xml:space="preserve">
+    <value>* * *</value>
+  </data>
+  <data name="cbArea.Items47" xml:space="preserve">
+    <value>China/Macau</value>
+  </data>
+  <data name="&gt;&gt;areaID.Name" xml:space="preserve">
+    <value>areaID</value>
+  </data>
+  <data name="&gt;&gt;btnWrite.Name" xml:space="preserve">
+    <value>btnWrite</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>657, 400</value>
+  </data>
+  <data name="cb_Course.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 41</value>
+  </data>
+  <data name="car.HeaderText" xml:space="preserve">
+    <value>car</value>
+  </data>
+  <data name="cbArea.Items11" xml:space="preserve">
+    <value>埼玉県</value>
+  </data>
+  <data name="&gt;&gt;car_maker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Rank Editor for Initial D Arcade Stage 8</value>
+  </data>
+  <data name="&gt;&gt;cb_Online.Name" xml:space="preserve">
+    <value>cb_Online</value>
+  </data>
+  <data name="cbArea.Items34" xml:space="preserve">
+    <value>山口県</value>
+  </data>
+  <data name="cbArea.Items24" xml:space="preserve">
+    <value>大阪府</value>
+  </data>
+  <data name="&gt;&gt;txtTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbArea.Items44" xml:space="preserve">
+    <value>宮崎県</value>
+  </data>
+  <data name="&gt;&gt;order.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cb_Course.Items" xml:space="preserve">
+    <value>Akina Lake</value>
+  </data>
+  <data name="cb_maker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;date.Name" xml:space="preserve">
+    <value>date</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="cbArea.Items15" xml:space="preserve">
+    <value>新潟県</value>
+  </data>
+  <data name="cbArea.Items35" xml:space="preserve">
+    <value>徳島県</value>
+  </data>
+  <data name="cbArea.Items25" xml:space="preserve">
+    <value>京都府</value>
+  </data>
+  <data name="cbArea.Items55" xml:space="preserve">
+    <value>Thailand</value>
+  </data>
+  <data name="cbArea.Items45" xml:space="preserve">
+    <value>鹿児島県</value>
+  </data>
+  <data name="cb_Direction.Items" xml:space="preserve">
+    <value>Direction 1</value>
+  </data>
+  <data name="name.HeaderText" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="&gt;&gt;cb_Online.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="date.HeaderText" xml:space="preserve">
+    <value>date</value>
+  </data>
+  <data name="cbArea.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btnUpdate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtName.Name" xml:space="preserve">
+    <value>txtName</value>
+  </data>
+  <data name="cbArea.Items1" xml:space="preserve">
+    <value>青森県</value>
+  </data>
+  <data name="cbArea.Items3" xml:space="preserve">
+    <value>宮城県</value>
+  </data>
+  <data name="cbArea.Items2" xml:space="preserve">
+    <value>岩手県</value>
+  </data>
+  <data name="cbArea.Items5" xml:space="preserve">
+    <value>山形県</value>
+  </data>
+  <data name="&gt;&gt;cb_maker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cb_maker.Items8" xml:space="preserve">
+    <value>COMPLETE</value>
+  </data>
+  <data name="&gt;&gt;btnWrite.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cbArea.Name" xml:space="preserve">
+    <value>cbArea</value>
+  </data>
+  <data name="cbArea.Items8" xml:space="preserve">
+    <value>栃木県</value>
+  </data>
+  <data name="cb_Course.Items2" xml:space="preserve">
+    <value>Akagi</value>
+  </data>
+  <data name="&gt;&gt;car_id.Name" xml:space="preserve">
+    <value>car_id</value>
+  </data>
+  <data name="cb_Online.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 41</value>
+  </data>
+  <data name="&gt;&gt;cb_ranktype.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;car.Name" xml:space="preserve">
+    <value>car</value>
+  </data>
+  <data name="&gt;&gt;btnWrite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cb_ranktype.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;btnUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;time.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbArea.Items7" xml:space="preserve">
+    <value>茨城県</value>
+  </data>
+  <data name="cb_Direction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 41</value>
+  </data>
+  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="order.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="lbTest.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cb_car.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cb_Course.Items8" xml:space="preserve">
+    <value>Tsubaki</value>
+  </data>
+  <data name="cb_Direction.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gvRank.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="time.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="order.HeaderText" xml:space="preserve">
+    <value>order</value>
+  </data>
+  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 338</value>
+  </data>
+  <data name="&gt;&gt;car_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtName.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="cb_maker.Items7" xml:space="preserve">
+    <value>INITIALD</value>
+  </data>
+  <data name="cb_maker.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="gvRank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 234</value>
+  </data>
+  <data name="cbArea.Items54" xml:space="preserve">
+    <value>Philippine</value>
+  </data>
+  <data name="car_maker.HeaderText" xml:space="preserve">
+    <value>car_maker</value>
+  </data>
+  <data name="&gt;&gt;area.Name" xml:space="preserve">
+    <value>area</value>
+  </data>
+  <data name="cb_Online.Items" xml:space="preserve">
+    <value>In-Store</value>
+  </data>
+  <data name="areaID.HeaderText" xml:space="preserve">
+    <value>areaID</value>
+  </data>
+  <data name="areaID.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cb_maker.Items4" xml:space="preserve">
+    <value>SUBARU</value>
+  </data>
+  <data name="cb_Course.Items5" xml:space="preserve">
+    <value>Tsukuba</value>
+  </data>
+  <data name="&gt;&gt;gvRank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cb_Course.Items7" xml:space="preserve">
+    <value>Nagao</value>
+  </data>
+  <data name="cb_ranktype.Items1" xml:space="preserve">
+    <value>Course Ranks</value>
+  </data>
+  <data name="&gt;&gt;cb_Direction.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtTime.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="cbArea.Items14" xml:space="preserve">
+    <value>山梨県</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cb_maker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 309</value>
+  </data>
+  <data name="gvRank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 69</value>
+  </data>
+  <data name="cbArea.Items18" xml:space="preserve">
+    <value>石川県</value>
+  </data>
+  <data name="txtName.MaxLength" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cbArea.Items38" xml:space="preserve">
+    <value>高知県</value>
+  </data>
+  <data name="cbArea.Items28" xml:space="preserve">
+    <value>和歌山県</value>
+  </data>
+  <data name="cbArea.Items48" xml:space="preserve">
+    <value>Hong Kong</value>
+  </data>
+  <data name="area.HeaderText" xml:space="preserve">
+    <value>area</value>
+  </data>
+  <data name="&gt;&gt;lbTest.Name" xml:space="preserve">
+    <value>lbTest</value>
+  </data>
+  <data name="cb_Online.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 309</value>
+  </data>
+  <data name="cbArea.Items19" xml:space="preserve">
+    <value>愛知県</value>
+  </data>
+  <data name="&gt;&gt;cb_maker.Name" xml:space="preserve">
+    <value>cb_maker</value>
+  </data>
+  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="cbArea.Items49" xml:space="preserve">
+    <value>Korea</value>
+  </data>
+  <data name="&gt;&gt;order.Name" xml:space="preserve">
+    <value>order</value>
+  </data>
+  <data name="lbTest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="btnUpdate.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;cb_ranktype.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="cb_maker.Items" xml:space="preserve">
+    <value>TOYOTA</value>
+  </data>
+  <data name="&gt;&gt;cb_Course.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cb_car.Name" xml:space="preserve">
+    <value>cb_car</value>
+  </data>
+  <data name="cbArea.Items39" xml:space="preserve">
+    <value>福岡県</value>
+  </data>
+  <data name="btnWrite.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cb_Online.Items1" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="cbArea.Items50" xml:space="preserve">
+    <value>Malaysia</value>
+  </data>
+  <data name="&gt;&gt;time.Name" xml:space="preserve">
+    <value>time</value>
+  </data>
+  <data name="&gt;&gt;cb_car.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;date.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_maker.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cb_Course.Name" xml:space="preserve">
+    <value>cb_Course</value>
+  </data>
+  <data name="cb_maker.Items6" xml:space="preserve">
+    <value>SUZUKI</value>
+  </data>
+  <data name="time.HeaderText" xml:space="preserve">
+    <value>time</value>
+  </data>
+  <data name="cbArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 339</value>
+  </data>
+  <data name="cb_maker.Items1" xml:space="preserve">
+    <value>NISSAN</value>
+  </data>
+  <data name="cb_car.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cbArea.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="car_id.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cb_ranktype.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="date.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="cb_maker.Items3" xml:space="preserve">
+    <value>MAZDA</value>
+  </data>
+  <data name="&gt;&gt;cb_maker.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbArea.Items51" xml:space="preserve">
+    <value>Singapore</value>
+  </data>
+  <data name="cb_ranktype.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbTest.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cb_Online.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUpdate.Name" xml:space="preserve">
+    <value>btnUpdate</value>
+  </data>
+  <data name="&gt;&gt;btnUpdate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;car.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cb_Course.Items1" xml:space="preserve">
+    <value>Myogi</value>
+  </data>
+  <data name="cb_Direction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="car_id.HeaderText" xml:space="preserve">
+    <value>car_id</value>
+  </data>
+  <data name="&gt;&gt;cb_Online.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbArea.Items31" xml:space="preserve">
+    <value>鳥取県</value>
+  </data>
+  <data name="cb_Course.Items11" xml:space="preserve">
+    <value>Tsuchisaka</value>
+  </data>
+  <data name="btnUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;name.Name" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="&gt;&gt;cb_Course.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cbArea.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 309</value>
+  </data>
+  <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 309</value>
+  </data>
+  <data name="&gt;&gt;cb_Direction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnWrite.Text" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="cbArea.Items" xml:space="preserve">
+    <value>北海道</value>
+  </data>
+  <data name="cbArea.Items9" xml:space="preserve">
+    <value>群馬県</value>
+  </data>
+  <data name="&gt;&gt;cb_ranktype.Name" xml:space="preserve">
+    <value>cb_ranktype</value>
+  </data>
+  <data name="&gt;&gt;name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTime.Name" xml:space="preserve">
+    <value>txtTime</value>
+  </data>
+  <data name="cbArea.Items12" xml:space="preserve">
+    <value>東京都</value>
+  </data>
+  <data name="cb_car.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 309</value>
+  </data>
+  <data name="cbArea.Items29" xml:space="preserve">
+    <value>兵庫県</value>
+  </data>
+  <data name="cbArea.Items22" xml:space="preserve">
+    <value>三重県</value>
+  </data>
+  <data name="cbArea.Items52" xml:space="preserve">
+    <value>Taiwan</value>
+  </data>
+  <data name="cbArea.Items42" xml:space="preserve">
+    <value>熊本県</value>
+  </data>
+  <data name="&gt;&gt;btnWrite.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="car_maker.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbTest.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
+    <value>dateTimePicker1</value>
+  </data>
+  <data name="cb_Course.Items3" xml:space="preserve">
+    <value>Akina</value>
+  </data>
+  <data name="&gt;&gt;txtTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cb_Course.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;lbTest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_Direction.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cb_ranktype.Items" xml:space="preserve">
+    <value>Car Ranks</value>
+  </data>
+  <data name="cbArea.Items6" xml:space="preserve">
+    <value>秋田県</value>
+  </data>
+  <data name="cb_maker.Items5" xml:space="preserve">
+    <value>MITSUBISHI</value>
+  </data>
+  <data name="cb_Course.Items4" xml:space="preserve">
+    <value>Irohazaka</value>
+  </data>
+  <data name="cbArea.Items13" xml:space="preserve">
+    <value>神奈川県</value>
+  </data>
+  <data name="cbArea.Items33" xml:space="preserve">
+    <value>岡山県</value>
+  </data>
+  <data name="cbArea.Items23" xml:space="preserve">
+    <value>福井県</value>
+  </data>
+  <data name="cbArea.Items53" xml:space="preserve">
+    <value>Indonesia</value>
+  </data>
+  <data name="cbArea.Items43" xml:space="preserve">
+    <value>大分県</value>
+  </data>
+  <data name="cbArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;car_maker.Name" xml:space="preserve">
+    <value>car_maker</value>
+  </data>
+  <data name="cb_maker.Items2" xml:space="preserve">
+    <value>HONDA</value>
+  </data>
+  <data name="cbArea.Items4" xml:space="preserve">
+    <value>福島県</value>
+  </data>
+  <data name="cbArea.Items41" xml:space="preserve">
+    <value>長崎県</value>
+  </data>
+  <data name="&gt;&gt;cb_Online.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cb_Course.Items9" xml:space="preserve">
+    <value>Usui</value>
+  </data>
+  <data name="cbArea.Items10" xml:space="preserve">
+    <value>千葉県</value>
+  </data>
+  <data name="cb_Direction.Items1" xml:space="preserve">
+    <value>Direciont 2</value>
+  </data>
+  <data name="cbArea.Items30" xml:space="preserve">
+    <value>広島県</value>
+  </data>
+  <data name="cbArea.Items20" xml:space="preserve">
+    <value>静岡県</value>
+  </data>
+  <data name="cb_car.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 21</value>
+  </data>
+  <data name="btnWrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 365</value>
+  </data>
+  <data name="lbTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 367</value>
+  </data>
+  <data name="&gt;&gt;cb_Direction.Name" xml:space="preserve">
+    <value>cb_Direction</value>
+  </data>
+  <data name="cbArea.Items21" xml:space="preserve">
+    <value>岐阜県</value>
+  </data>
+  <data name="txtName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;areaID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="car_id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-US</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="areaID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="car.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -126,49 +836,13 @@
   <metadata name="time.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="car.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="area.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="car_maker.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="car_id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="areaID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="order.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="time.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="car.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="area.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="car_maker.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="car_id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="areaID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cb_ranktype = new System.Windows.Forms.ComboBox();
             this.btnWrite = new System.Windows.Forms.Button();
             this.cb_Online = new System.Windows.Forms.ComboBox();
@@ -61,47 +62,38 @@
             // 
             // cb_ranktype
             // 
+            resources.ApplyResources(this.cb_ranktype, "cb_ranktype");
             this.cb_ranktype.FormattingEnabled = true;
             this.cb_ranktype.Items.AddRange(new object[] {
-            "Car Ranks",
-            "Course Ranks"});
-            this.cb_ranktype.Location = new System.Drawing.Point(13, 13);
+            resources.GetString("cb_ranktype.Items"),
+            resources.GetString("cb_ranktype.Items1")});
             this.cb_ranktype.Name = "cb_ranktype";
-            this.cb_ranktype.Size = new System.Drawing.Size(121, 21);
-            this.cb_ranktype.TabIndex = 0;
             // 
             // btnWrite
             // 
-            this.btnWrite.Location = new System.Drawing.Point(570, 365);
+            resources.ApplyResources(this.btnWrite, "btnWrite");
             this.btnWrite.Name = "btnWrite";
-            this.btnWrite.Size = new System.Drawing.Size(75, 25);
-            this.btnWrite.TabIndex = 1;
-            this.btnWrite.Text = "Write";
             this.btnWrite.UseVisualStyleBackColor = true;
             this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
             // 
             // cb_Online
             // 
+            resources.ApplyResources(this.cb_Online, "cb_Online");
             this.cb_Online.FormattingEnabled = true;
             this.cb_Online.Items.AddRange(new object[] {
-            "In-Store",
-            "Online"});
-            this.cb_Online.Location = new System.Drawing.Point(13, 41);
+            resources.GetString("cb_Online.Items"),
+            resources.GetString("cb_Online.Items1")});
             this.cb_Online.Name = "cb_Online";
-            this.cb_Online.Size = new System.Drawing.Size(121, 21);
-            this.cb_Online.TabIndex = 2;
             this.cb_Online.SelectedIndexChanged += new System.EventHandler(this.cb_Online_SelectedIndexChanged);
             // 
             // lbTest
             // 
-            this.lbTest.AutoSize = true;
-            this.lbTest.Location = new System.Drawing.Point(10, 367);
+            resources.ApplyResources(this.lbTest, "lbTest");
             this.lbTest.Name = "lbTest";
-            this.lbTest.Size = new System.Drawing.Size(0, 13);
-            this.lbTest.TabIndex = 3;
             // 
             // gvRank
             // 
+            resources.ApplyResources(this.gvRank, "gvRank");
             this.gvRank.AllowUserToAddRows = false;
             this.gvRank.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRank.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -114,254 +106,222 @@
             this.car_maker,
             this.car_id,
             this.areaID});
-            this.gvRank.Location = new System.Drawing.Point(13, 69);
             this.gvRank.Name = "gvRank";
             this.gvRank.RowTemplate.Height = 21;
-            this.gvRank.Size = new System.Drawing.Size(633, 234);
-            this.gvRank.TabIndex = 5;
             // 
             // cb_Course
             // 
+            resources.ApplyResources(this.cb_Course, "cb_Course");
             this.cb_Course.FormattingEnabled = true;
             this.cb_Course.Items.AddRange(new object[] {
-            "Akina Lake",
-            "Myogi",
-            "Akagi",
-            "Akina",
-            "Irohazaka",
-            "Tsukuba",
-            "Happogahara",
-            "Nagao",
-            "Tsubaki",
-            "Usui",
-            "Sadamine",
-            "Tsuchisaka",
-            "Akina Snow",
-            "Hakone",
-            "Momiji",
-            "Nanamagari"});
-            this.cb_Course.Location = new System.Drawing.Point(140, 41);
+            resources.GetString("cb_Course.Items"),
+            resources.GetString("cb_Course.Items1"),
+            resources.GetString("cb_Course.Items2"),
+            resources.GetString("cb_Course.Items3"),
+            resources.GetString("cb_Course.Items4"),
+            resources.GetString("cb_Course.Items5"),
+            resources.GetString("cb_Course.Items6"),
+            resources.GetString("cb_Course.Items7"),
+            resources.GetString("cb_Course.Items8"),
+            resources.GetString("cb_Course.Items9"),
+            resources.GetString("cb_Course.Items10"),
+            resources.GetString("cb_Course.Items11"),
+            resources.GetString("cb_Course.Items12"),
+            resources.GetString("cb_Course.Items13"),
+            resources.GetString("cb_Course.Items14"),
+            resources.GetString("cb_Course.Items15")});
             this.cb_Course.Name = "cb_Course";
-            this.cb_Course.Size = new System.Drawing.Size(121, 21);
-            this.cb_Course.TabIndex = 6;
             this.cb_Course.SelectedIndexChanged += new System.EventHandler(this.cb_Course_SelectedIndexChanged);
             // 
             // cb_Direction
             // 
+            resources.ApplyResources(this.cb_Direction, "cb_Direction");
             this.cb_Direction.FormattingEnabled = true;
             this.cb_Direction.Items.AddRange(new object[] {
-            "Direction 1",
-            "Direciont 2"});
-            this.cb_Direction.Location = new System.Drawing.Point(267, 41);
+            resources.GetString("cb_Direction.Items"),
+            resources.GetString("cb_Direction.Items1")});
             this.cb_Direction.Name = "cb_Direction";
-            this.cb_Direction.Size = new System.Drawing.Size(100, 21);
-            this.cb_Direction.TabIndex = 7;
             this.cb_Direction.SelectedIndexChanged += new System.EventHandler(this.cb_Direction_SelectedIndexChanged);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(11, 309);
-            this.txtName.MaxLength = 6;
+            resources.ApplyResources(this.txtName, "txtName");
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 8;
             // 
             // txtTime
             // 
-            this.txtTime.Location = new System.Drawing.Point(117, 309);
-            this.txtTime.MaxLength = 9;
+            resources.ApplyResources(this.txtTime, "txtTime");
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(100, 20);
-            this.txtTime.TabIndex = 9;
             // 
             // cb_maker
             // 
+            resources.ApplyResources(this.cb_maker, "cb_maker");
             this.cb_maker.FormattingEnabled = true;
             this.cb_maker.Items.AddRange(new object[] {
-            "TOYOTA",
-            "NISSAN",
-            "HONDA",
-            "MAZDA",
-            "SUBARU",
-            "MITSUBISHI",
-            "SUZUKI",
-            "INITIALD",
-            "COMPLETE"});
-            this.cb_maker.Location = new System.Drawing.Point(223, 309);
+            resources.GetString("cb_maker.Items"),
+            resources.GetString("cb_maker.Items1"),
+            resources.GetString("cb_maker.Items2"),
+            resources.GetString("cb_maker.Items3"),
+            resources.GetString("cb_maker.Items4"),
+            resources.GetString("cb_maker.Items5"),
+            resources.GetString("cb_maker.Items6"),
+            resources.GetString("cb_maker.Items7"),
+            resources.GetString("cb_maker.Items8")});
             this.cb_maker.Name = "cb_maker";
-            this.cb_maker.Size = new System.Drawing.Size(121, 21);
-            this.cb_maker.TabIndex = 10;
             this.cb_maker.SelectedIndexChanged += new System.EventHandler(this.cb_maker_SelectedIndexChanged);
             // 
             // cb_car
             // 
+            resources.ApplyResources(this.cb_car, "cb_car");
             this.cb_car.FormattingEnabled = true;
-            this.cb_car.Location = new System.Drawing.Point(350, 309);
             this.cb_car.Name = "cb_car";
-            this.cb_car.Size = new System.Drawing.Size(211, 21);
-            this.cb_car.TabIndex = 11;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(223, 338);
+            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 12;
             // 
             // cbArea
             // 
+            resources.ApplyResources(this.cbArea, "cbArea");
             this.cbArea.FormattingEnabled = true;
             this.cbArea.Items.AddRange(new object[] {
-            "北海道",
-            "青森県",
-            "岩手県",
-            "宮城県",
-            "福島県",
-            "山形県",
-            "秋田県",
-            "茨城県",
-            "栃木県",
-            "群馬県",
-            "千葉県",
-            "埼玉県",
-            "東京都",
-            "神奈川県",
-            "山梨県",
-            "新潟県",
-            "長野県",
-            "富山県",
-            "石川県",
-            "愛知県",
-            "静岡県",
-            "岐阜県",
-            "三重県",
-            "福井県",
-            "大阪府",
-            "京都府",
-            "奈良県",
-            "滋賀県",
-            "和歌山県",
-            "兵庫県",
-            "広島県",
-            "鳥取県",
-            "島根県",
-            "岡山県",
-            "山口県",
-            "徳島県",
-            "香川県",
-            "愛媛県",
-            "高知県",
-            "福岡県",
-            "佐賀県",
-            "長崎県",
-            "熊本県",
-            "大分県",
-            "宮崎県",
-            "鹿児島県",
-            "沖縄県",
-            "China/Macau",
-            "Hong Kong",
-            "Korea",
-            "Malaysia",
-            "Singapore",
-            "Taiwan",
-            "Indonesia",
-            "Philippine",
-            "Thailand",
-            "America",
-            "* * *"});
-            this.cbArea.Location = new System.Drawing.Point(11, 339);
+            resources.GetString("cbArea.Items"),
+            resources.GetString("cbArea.Items1"),
+            resources.GetString("cbArea.Items2"),
+            resources.GetString("cbArea.Items3"),
+            resources.GetString("cbArea.Items4"),
+            resources.GetString("cbArea.Items5"),
+            resources.GetString("cbArea.Items6"),
+            resources.GetString("cbArea.Items7"),
+            resources.GetString("cbArea.Items8"),
+            resources.GetString("cbArea.Items9"),
+            resources.GetString("cbArea.Items10"),
+            resources.GetString("cbArea.Items11"),
+            resources.GetString("cbArea.Items12"),
+            resources.GetString("cbArea.Items13"),
+            resources.GetString("cbArea.Items14"),
+            resources.GetString("cbArea.Items15"),
+            resources.GetString("cbArea.Items16"),
+            resources.GetString("cbArea.Items17"),
+            resources.GetString("cbArea.Items18"),
+            resources.GetString("cbArea.Items19"),
+            resources.GetString("cbArea.Items20"),
+            resources.GetString("cbArea.Items21"),
+            resources.GetString("cbArea.Items22"),
+            resources.GetString("cbArea.Items23"),
+            resources.GetString("cbArea.Items24"),
+            resources.GetString("cbArea.Items25"),
+            resources.GetString("cbArea.Items26"),
+            resources.GetString("cbArea.Items27"),
+            resources.GetString("cbArea.Items28"),
+            resources.GetString("cbArea.Items29"),
+            resources.GetString("cbArea.Items30"),
+            resources.GetString("cbArea.Items31"),
+            resources.GetString("cbArea.Items32"),
+            resources.GetString("cbArea.Items33"),
+            resources.GetString("cbArea.Items34"),
+            resources.GetString("cbArea.Items35"),
+            resources.GetString("cbArea.Items36"),
+            resources.GetString("cbArea.Items37"),
+            resources.GetString("cbArea.Items38"),
+            resources.GetString("cbArea.Items39"),
+            resources.GetString("cbArea.Items40"),
+            resources.GetString("cbArea.Items41"),
+            resources.GetString("cbArea.Items42"),
+            resources.GetString("cbArea.Items43"),
+            resources.GetString("cbArea.Items44"),
+            resources.GetString("cbArea.Items45"),
+            resources.GetString("cbArea.Items46"),
+            resources.GetString("cbArea.Items47"),
+            resources.GetString("cbArea.Items48"),
+            resources.GetString("cbArea.Items49"),
+            resources.GetString("cbArea.Items50"),
+            resources.GetString("cbArea.Items51"),
+            resources.GetString("cbArea.Items52"),
+            resources.GetString("cbArea.Items53"),
+            resources.GetString("cbArea.Items54"),
+            resources.GetString("cbArea.Items55"),
+            resources.GetString("cbArea.Items56"),
+            resources.GetString("cbArea.Items57")});
             this.cbArea.Name = "cbArea";
-            this.cbArea.Size = new System.Drawing.Size(121, 21);
-            this.cbArea.TabIndex = 13;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(570, 309);
+            resources.ApplyResources(this.btnUpdate, "btnUpdate");
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 14;
-            this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // order
             // 
-            this.order.HeaderText = "order";
+            resources.ApplyResources(this.order, "order");
             this.order.Name = "order";
             this.order.ReadOnly = true;
-            this.order.Width = 50;
             // 
             // name
             // 
-            dataGridViewCellStyle16.NullValue = "ＳＥＧＡ";
-            this.name.DefaultCellStyle = dataGridViewCellStyle16;
-            this.name.HeaderText = "name";
+            dataGridViewCellStyle6.NullValue = "ＳＥＧＡ";
+            this.name.DefaultCellStyle = dataGridViewCellStyle6;
+            resources.ApplyResources(this.name, "name");
             this.name.Name = "name";
             this.name.ReadOnly = true;
             // 
             // time
             // 
-            dataGridViewCellStyle17.NullValue = "6\'00\'\'000";
-            this.time.DefaultCellStyle = dataGridViewCellStyle17;
-            this.time.HeaderText = "time";
+            dataGridViewCellStyle7.NullValue = "6\'00\'\'000";
+            this.time.DefaultCellStyle = dataGridViewCellStyle7;
+            resources.ApplyResources(this.time, "time");
             this.time.Name = "time";
             this.time.ReadOnly = true;
-            this.time.Width = 50;
             // 
             // car
             // 
-            dataGridViewCellStyle18.NullValue = "TRUENO GT-APEX (AE86)";
-            this.car.DefaultCellStyle = dataGridViewCellStyle18;
-            this.car.HeaderText = "car";
+            dataGridViewCellStyle8.NullValue = "TRUENO GT-APEX (AE86)";
+            this.car.DefaultCellStyle = dataGridViewCellStyle8;
+            resources.ApplyResources(this.car, "car");
             this.car.Name = "car";
             this.car.ReadOnly = true;
-            this.car.Width = 220;
             // 
             // area
             // 
-            dataGridViewCellStyle19.NullValue = "群馬";
-            this.area.DefaultCellStyle = dataGridViewCellStyle19;
-            this.area.HeaderText = "area";
+            dataGridViewCellStyle9.NullValue = "群馬";
+            this.area.DefaultCellStyle = dataGridViewCellStyle9;
+            resources.ApplyResources(this.area, "area");
             this.area.Name = "area";
             this.area.ReadOnly = true;
             // 
             // date
             // 
-            dataGridViewCellStyle20.Format = "d";
-            dataGridViewCellStyle20.NullValue = "2014.01.01";
-            this.date.DefaultCellStyle = dataGridViewCellStyle20;
-            this.date.HeaderText = "date";
+            dataGridViewCellStyle10.Format = "d";
+            dataGridViewCellStyle10.NullValue = "2014.01.01";
+            this.date.DefaultCellStyle = dataGridViewCellStyle10;
+            resources.ApplyResources(this.date, "date");
             this.date.Name = "date";
             this.date.ReadOnly = true;
-            this.date.Width = 70;
             // 
             // car_maker
             // 
-            this.car_maker.HeaderText = "car_maker";
+            resources.ApplyResources(this.car_maker, "car_maker");
             this.car_maker.Name = "car_maker";
             this.car_maker.ReadOnly = true;
-            this.car_maker.Visible = false;
             // 
             // car_id
             // 
-            this.car_id.HeaderText = "car_id";
+            resources.ApplyResources(this.car_id, "car_id");
             this.car_id.Name = "car_id";
             this.car_id.ReadOnly = true;
-            this.car_id.Visible = false;
             // 
             // areaID
             // 
-            this.areaID.HeaderText = "areaID";
+            resources.ApplyResources(this.areaID, "areaID");
             this.areaID.Name = "areaID";
             this.areaID.ReadOnly = true;
-            this.areaID.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 400);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.cbArea);
             this.Controls.Add(this.dateTimePicker1);
@@ -377,7 +337,6 @@
             this.Controls.Add(this.btnWrite);
             this.Controls.Add(this.cb_ranktype);
             this.Name = "Form1";
-            this.Text = "Rank Editor for Initial D Arcade Stage 8";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvRank)).EndInit();
             this.ResumeLayout(false);
