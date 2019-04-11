@@ -257,6 +257,9 @@
   <data name="cbArea.Items44" xml:space="preserve">
     <value>宮崎県</value>
   </data>
+  <data name="cb_car.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 21</value>
+  </data>
   <data name="&gt;&gt;order.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -293,9 +296,6 @@
   <data name="name.HeaderText" xml:space="preserve">
     <value>name</value>
   </data>
-  <data name="&gt;&gt;cb_Online.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="date.HeaderText" xml:space="preserve">
     <value>date</value>
   </data>
@@ -307,6 +307,9 @@
   </data>
   <data name="&gt;&gt;txtName.Name" xml:space="preserve">
     <value>txtName</value>
+  </data>
+  <data name="lbTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 367</value>
   </data>
   <data name="cbArea.Items1" xml:space="preserve">
     <value>青森県</value>
@@ -539,9 +542,6 @@
   <data name="cb_Online.Items1" xml:space="preserve">
     <value>Online</value>
   </data>
-  <data name="cbArea.Items50" xml:space="preserve">
-    <value>Malaysia</value>
-  </data>
   <data name="&gt;&gt;time.Name" xml:space="preserve">
     <value>time</value>
   </data>
@@ -746,8 +746,8 @@
   <data name="cbArea.Items13" xml:space="preserve">
     <value>神奈川県</value>
   </data>
-  <data name="cbArea.Items33" xml:space="preserve">
-    <value>岡山県</value>
+  <data name="&gt;&gt;cb_Online.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="cbArea.Items23" xml:space="preserve">
     <value>福井県</value>
@@ -791,14 +791,14 @@
   <data name="cbArea.Items20" xml:space="preserve">
     <value>静岡県</value>
   </data>
-  <data name="cb_car.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 21</value>
+  <data name="cbArea.Items50" xml:space="preserve">
+    <value>Malaysia</value>
   </data>
   <data name="btnWrite.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 365</value>
   </data>
-  <data name="lbTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 367</value>
+  <data name="cbArea.Items33" xml:space="preserve">
+    <value>岡山県</value>
   </data>
   <data name="&gt;&gt;cb_Direction.Name" xml:space="preserve">
     <value>cb_Direction</value>

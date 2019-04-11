@@ -29,25 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cb_ranktype = new System.Windows.Forms.ComboBox();
             this.btnWrite = new System.Windows.Forms.Button();
             this.cb_Online = new System.Windows.Forms.ComboBox();
             this.lbTest = new System.Windows.Forms.Label();
             this.gvRank = new System.Windows.Forms.DataGridView();
-            this.cb_Course = new System.Windows.Forms.ComboBox();
-            this.cb_Direction = new System.Windows.Forms.ComboBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtTime = new System.Windows.Forms.TextBox();
-            this.cb_maker = new System.Windows.Forms.ComboBox();
-            this.cb_car = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.cbArea = new System.Windows.Forms.ComboBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +48,15 @@
             this.car_maker = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.car_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.areaID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cb_Course = new System.Windows.Forms.ComboBox();
+            this.cb_Direction = new System.Windows.Forms.ComboBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.cb_maker = new System.Windows.Forms.ComboBox();
+            this.cb_car = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cbArea = new System.Windows.Forms.ComboBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gvRank)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,6 +95,9 @@
             // 
             resources.ApplyResources(this.gvRank, "gvRank");
             this.gvRank.AllowUserToAddRows = false;
+            this.gvRank.AllowUserToDeleteRows = false;
+            this.gvRank.AllowUserToResizeColumns = false;
+            this.gvRank.AllowUserToResizeRows = false;
             this.gvRank.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRank.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.order,
@@ -106,8 +109,75 @@
             this.car_maker,
             this.car_id,
             this.areaID});
+            this.gvRank.MultiSelect = false;
             this.gvRank.Name = "gvRank";
+            this.gvRank.RowHeadersVisible = false;
             this.gvRank.RowTemplate.Height = 21;
+            // 
+            // order
+            // 
+            resources.ApplyResources(this.order, "order");
+            this.order.Name = "order";
+            this.order.ReadOnly = true;
+            // 
+            // name
+            // 
+            dataGridViewCellStyle1.NullValue = "ＳＥＧＡ";
+            this.name.DefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.name, "name");
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // time
+            // 
+            dataGridViewCellStyle2.NullValue = "6\'00\'\'000";
+            this.time.DefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.time, "time");
+            this.time.Name = "time";
+            this.time.ReadOnly = true;
+            // 
+            // car
+            // 
+            dataGridViewCellStyle3.NullValue = "TRUENO GT-APEX (AE86)";
+            this.car.DefaultCellStyle = dataGridViewCellStyle3;
+            resources.ApplyResources(this.car, "car");
+            this.car.Name = "car";
+            this.car.ReadOnly = true;
+            // 
+            // area
+            // 
+            dataGridViewCellStyle4.NullValue = "群馬";
+            this.area.DefaultCellStyle = dataGridViewCellStyle4;
+            resources.ApplyResources(this.area, "area");
+            this.area.Name = "area";
+            this.area.ReadOnly = true;
+            // 
+            // date
+            // 
+            dataGridViewCellStyle5.Format = "d";
+            dataGridViewCellStyle5.NullValue = "2014.01.01";
+            this.date.DefaultCellStyle = dataGridViewCellStyle5;
+            resources.ApplyResources(this.date, "date");
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
+            // car_maker
+            // 
+            resources.ApplyResources(this.car_maker, "car_maker");
+            this.car_maker.Name = "car_maker";
+            this.car_maker.ReadOnly = true;
+            // 
+            // car_id
+            // 
+            resources.ApplyResources(this.car_id, "car_id");
+            this.car_id.Name = "car_id";
+            this.car_id.ReadOnly = true;
+            // 
+            // areaID
+            // 
+            resources.ApplyResources(this.areaID, "areaID");
+            this.areaID.Name = "areaID";
+            this.areaID.ReadOnly = true;
             // 
             // cb_Course
             // 
@@ -252,71 +322,6 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // order
-            // 
-            resources.ApplyResources(this.order, "order");
-            this.order.Name = "order";
-            this.order.ReadOnly = true;
-            // 
-            // name
-            // 
-            dataGridViewCellStyle6.NullValue = "ＳＥＧＡ";
-            this.name.DefaultCellStyle = dataGridViewCellStyle6;
-            resources.ApplyResources(this.name, "name");
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // time
-            // 
-            dataGridViewCellStyle7.NullValue = "6\'00\'\'000";
-            this.time.DefaultCellStyle = dataGridViewCellStyle7;
-            resources.ApplyResources(this.time, "time");
-            this.time.Name = "time";
-            this.time.ReadOnly = true;
-            // 
-            // car
-            // 
-            dataGridViewCellStyle8.NullValue = "TRUENO GT-APEX (AE86)";
-            this.car.DefaultCellStyle = dataGridViewCellStyle8;
-            resources.ApplyResources(this.car, "car");
-            this.car.Name = "car";
-            this.car.ReadOnly = true;
-            // 
-            // area
-            // 
-            dataGridViewCellStyle9.NullValue = "群馬";
-            this.area.DefaultCellStyle = dataGridViewCellStyle9;
-            resources.ApplyResources(this.area, "area");
-            this.area.Name = "area";
-            this.area.ReadOnly = true;
-            // 
-            // date
-            // 
-            dataGridViewCellStyle10.Format = "d";
-            dataGridViewCellStyle10.NullValue = "2014.01.01";
-            this.date.DefaultCellStyle = dataGridViewCellStyle10;
-            resources.ApplyResources(this.date, "date");
-            this.date.Name = "date";
-            this.date.ReadOnly = true;
-            // 
-            // car_maker
-            // 
-            resources.ApplyResources(this.car_maker, "car_maker");
-            this.car_maker.Name = "car_maker";
-            this.car_maker.ReadOnly = true;
-            // 
-            // car_id
-            // 
-            resources.ApplyResources(this.car_id, "car_id");
-            this.car_id.Name = "car_id";
-            this.car_id.ReadOnly = true;
-            // 
-            // areaID
-            // 
-            resources.ApplyResources(this.areaID, "areaID");
-            this.areaID.Name = "areaID";
-            this.areaID.ReadOnly = true;
             // 
             // Form1
             // 
