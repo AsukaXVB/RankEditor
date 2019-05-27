@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         static int offset;
+        static bool champion = false;
         static string[,] table_Cars = new string[9, 11] {
                 {
                     "TRUENO GT-APEX (AE86)",
@@ -185,6 +186,7 @@ namespace WindowsFormsApp1
             "Thailand",
             "America",
             "* * *"};
+        static byte[] ccp1, ccp2, ccp3;
 
         public Form1()
         {
@@ -197,7 +199,7 @@ namespace WindowsFormsApp1
             return arrByte;
         }
 
-        public static String ToSBC(String input)
+        private String ToSBC(String input)
         {
             char[] c = input.ToCharArray();
             for (int i = 0; i < c.Length; i++)
@@ -344,6 +346,11 @@ namespace WindowsFormsApp1
             byte[] tTime = new byte[0x4];
             byte[] date = new byte[0x4];
 
+            champion = false;
+            ccp1 = null;
+            ccp2 = null;
+            ccp3 = null;
+
             gvRank.Rows.Clear();
 
             for (int index = 0; index < 10; index++)
@@ -397,6 +404,13 @@ namespace WindowsFormsApp1
                 write(offset + 0x2C + 0x600 * index, IntToHex(TimeToInt(gvRank.Rows[index].Cells[2].Value.ToString().Replace("'", ""))));
                 write(offset + 0x1C + 0x600 * index, DateToHex(DateTime.Parse(gvRank.Rows[index].Cells[5].Value.ToString())));
                 write(offset + 0x14 + 0x600 * index, arrByte);
+
+                if(champion)
+                {
+                    write(offset + 0x20, ccp1);
+                    write(offset + 0x24, ccp2);
+                    write(offset + 0x28, ccp3);
+                }
             }
         }
 
@@ -564,6 +578,12 @@ namespace WindowsFormsApp1
                             gvRank.Rows[index].Cells[i].Value = gvRank.Rows[index - 1].Cells[i].Value;
                     }
                 }
+                if(newOrder == 0)
+                {
+                    locate();
+                    Form2 form = new Form2();
+                    form.ShowDialog();
+                }
                 gvRank.Rows[newOrder].Cells[1].Value = ToSBC(txtName.Text);
                 gvRank.Rows[newOrder].Cells[2].Value = IntToTime(TimeToInt(txtTime.Text.ToString().Replace("'", "")));
                 gvRank.Rows[newOrder].Cells[3].Value = table_Cars[cb_maker.SelectedIndex, cb_car.SelectedIndex];
@@ -573,6 +593,14 @@ namespace WindowsFormsApp1
                 gvRank.Rows[newOrder].Cells[7].Value = cb_car.SelectedIndex;
                 gvRank.Rows[newOrder].Cells[8].Value = cbArea.SelectedIndex;
             }
+        }
+
+        public static void championUpdate(string cp1, string cp2, string cp3)
+        {
+            ccp1 = IntToHex(TimeToInt(cp1));
+            ccp2 = IntToHex(TimeToInt(cp2));
+            ccp3 = IntToHex(TimeToInt(cp3));
+            champion = true;
         }
     }
 }
